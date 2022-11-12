@@ -132,6 +132,8 @@ header > a {
 
 .navigation a {
   color: var(--primary-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation .current {
@@ -140,7 +142,6 @@ header > a {
 
 .navigation a:hover,
 .navigation a:focus {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 
@@ -155,12 +156,12 @@ header > a {
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-tel a:hover,
 .mail-tel a:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 
@@ -189,7 +190,6 @@ header > a {
 .mail-tel-link:hover .tel,
 .mail-tel-link:focus .mail,
 .mail-tel-link:focus .tel {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 
@@ -198,6 +198,7 @@ header > a {
   margin-right: 10px;
   height: 12px;
   width: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
@@ -205,11 +206,8 @@ header > a {
   margin-right: 10px;
   height: 16px;
   width: 10px;
-}
 
-.mail:hover {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--accent-color);
 }
 
 .logo {
@@ -448,6 +446,7 @@ main {
   height: 44px;
   padding: 12px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-list:not(:last-child) {
@@ -458,17 +457,16 @@ main {
   fill: var(--duo-text-color);
   width: 20px;
   height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:hover,
 .social-icon-link:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
 
 .social-icon-link:hover .social-icon-item,
 .social-icon-link:focus .social-icon-item {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--font--color);
 }
 
@@ -493,12 +491,16 @@ main {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   fill: var(--duo-text-color);
   width: 106px;
   height: 60px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item:not(:last-child) {
@@ -507,12 +509,10 @@ main {
 
 .clients-list-link:hover .clients-icon,
 .clients-list-link:focus .clients-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 
 .clients-list-link:hover {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--accent-color);
 }
 
@@ -531,6 +531,8 @@ main {
 
 .cellar a {
   color: var(--font--color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-footer {
@@ -553,7 +555,6 @@ main {
 
 .adds a:hover,
 .adds a:focus {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 
@@ -585,6 +586,8 @@ main {
   border-radius: 50%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cellar-icon-list:not(:last-child) {
@@ -593,7 +596,6 @@ main {
 
 .part-cellar-link:hover,
 .part-cellar-link:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: none;
   background-color: var(--accent-color);
 }
@@ -638,12 +640,14 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters:hover,
 .filters:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
   color: var(--font--color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -660,11 +664,12 @@ main {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
   cursor: pointer;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .posters-list:hover,
 .posters-list:focus {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
